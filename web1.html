@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
+    <!--swal-->
+
+
+    <title>Fast 8</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header class="nav-bar">
+        <ul>
+            <li><a href="#" class="active">สมัยนายเลิศ</a></li>
+            <li><a href="#">สมัย ขสมก.</a></li>
+        </ul>
+        <a href="#" class="logo_btn"><img  src="https://media.discordapp.net/attachments/1030727815689150504/1030727892461694976/15e309378a5cde20.png?width=1228&height=663" class="logo-nav"></a>
+    </header>
+    <div class="sq_black" id="bulur"></div>
+    <div class="top_web_container" id="blur">
+        <img  id="clound_tleft" class="cloud_tleft" src="https://media.discordapp.net/attachments/1030727815689150504/1030743678181974016/01.png?width=1000&height=676"> 
+        <img  id="clound_bleft" class="cloud_bleft" src="https://media.discordapp.net/attachments/1030727815689150504/1030743775217197126/02.png?width=888&height=676">
+        <img  id="clound_right" class="cloud_right" src="https://media.discordapp.net/attachments/1030727815689150504/1030743775217197126/02.png?width=888&height=676"> 
+        <img  id="big_log" class="logo" src="https://media.discordapp.net/attachments/1030727815689150504/1030727892461694976/15e309378a5cde20.png?width=1251&height=676">
+        <div class="text_top">
+            <p><br>เปิดแล้ววันนี้ สาย8 แฮปปี้แลนด์-สะพานพุทธ</p>
+            <p>สนใจมาเป็นครอบครัวเดียวกับเรา</p>
+        </div>
+        
+        <div class="btn_register_container">
+
+            <button class="button_register" onclick="div_show()">สมัคร</button>
+            <!-- <button onclick="toggle()">สมัคร</button> -->
+        </div>
+       
+
+        <div id="abc">
+            <div id="popupContact">
+                
+                <form action="#" id="form" method="post" name="form">
+                    <img  id="close" src="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-color-round-icon/253988/44-256.png" onclick ="div_hide()">
+                    <img  class="log" src="https://media.discordapp.net/attachments/1030727815689150504/1034849389698621560/Logo-.png" alt="">
+                    <div class="box">
+                        <img  class="human" src="https://cdn.discordapp.com/attachments/1030727815689150504/1035570533070286858/-.png">
+                    </div>
+                    <div>
+                    <h1 style="font-size: 40px;">ใบสมัคร</h1>
+                    <p style="font-size: 25px;">รถประจำทางนายเลิศ สาย ๘</p>
+                    <p>มาร่วมเป็นครอบครัวเดียวกับเรา เพียงเเค่คุณมี คุณสมบัติครบตามนี้</p>
+                    <p style="font-size: 25px;">ชื่อ.................นามสกุล..............อายุ......</p>
+                    <hr style="border-top: 2px dashed darkgray;">
+                    <div class="check">
+                        <label class="container">&emsp;สุภาพ
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">&emsp;ซื่อสัตย์
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">&emsp;ตรงต่อเวลา
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">&emsp;มีมนุษย์สัมพันธ์ดี
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sign">
+                        <p>ลงชื่อ..............................................ผู้สมัคร<br>
+                        (.........................................................)<br>
+                        วันที่......เดือน.................พ.ศ...........</p>
+                    </div>
+                    </div>
+                    <br>
+                    <a  id="submit"onclick ="div_show2()">ยื่นเรื่อง</a>
+                </form> 
+            </div>
+        </div>
+        
+        <div id="abc2">
+            <div id="popupContact">
+                
+                <form action="#" id="form" method="post" name="form">
+                    <img  id="close" src="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-color-round-icon/253988/44-256.png" onclick ="div_hide()">
+                    <img  class="log" src="https://media.discordapp.net/attachments/1030727815689150504/1034849389698621560/Logo-.png" alt="">
+                    <div class="box">
+                        <img  class="human" src="https://cdn.discordapp.com/attachments/1030727815689150504/1035570533070286858/-.png">
+                    </div>
+                    <div>
+                    <h1 style="font-size: 40px;">ใบสมัคร</h1>
+                    <p style="font-size: 25px;">รถประจำทางนายเลิศ สาย ๘</p>
+                    
+                    <hr style="border-top: 2px dashed darkgray;">
+                    <br><br>
+                    <h1 style="color: red;">"ขอแสดงความยินดีกับคุณด้วย<br>เราดีใจเป็นอย่างมากที่คุณจะมาเป็น
+                        <br>ครอบครัวเดียวกับเรา"
+                    </h1>
+                    <br><br>
+                    <p>นโยบายบริษัทนายเลิศ</p>
+                    <p>สุภาพ ซื่อสัตย์ ประหยัด ทันใจ<br>
+                        เอากำไรเเต่น้อย บริการผู้มีรายได้น้อย
+                    </p>
+                    </div>
+                    <br>
+                </form> 
+            </div>
+        </div>
+        
+        
+
+        <img  class="scroll" src="https://media.discordapp.net/attachments/1030727815689150504/1030757626738397264/Scroll.png?width=888&height=676" >
+    </div>
+    <div class="garage_container">
+        <img  class="garaged" src="img/2.png" alt="">
+        <img  id="garage" class="garageA" src="img/3.png">
+        <img  id="busA" class="car_a" src="https://cdn.discordapp.com/attachments/1030727815689150504/1030791236510040134/1.png">
+        <img  id="bus" class="car_b" src="https://cdn.discordapp.com/attachments/1030727815689150504/1030791934203146250/b7e3a7a7f6f39957.png">
+        <img  id="driver1" class="driver_walk_01" src="https://media.discordapp.net/attachments/1030727815689150504/1030793197267468358/01.png?width=476&height=676"> 
+        <img  id="driver2" class="driver_walk_02" src="https://media.discordapp.net/attachments/1030727815689150504/1031147309163094106/03.png?width=476&height=676">        
+    </div>
+    <img class="start_door_container" src="img/4.png" alt="">
+    <img  class="start_door" src="img/5.png" >
+    <div class="paragraph" id="app">
+        {{intro}}
+    </div>
+    <img  class="road_1_container" src="img/6.png" alt="">
+    
+    <img  id="dialog1" class="pop-up1" src="https://media.discordapp.net/attachments/1030727815689150504/1035550541671038996/popup.png?width=1440&height=403" alt="">
+    <img  id="dialog2" class="pop-up2" src="https://media.discordapp.net/attachments/1030727815689150504/1035580934780637245/popup.png?width=1440&height=630" alt="">
+    <img  id="dialog3" class="pop-up3" src="https://media.discordapp.net/attachments/1030727815689150504/1035580936508674139/popup.png?width=1440&height=630" alt="">
+    <img  id="dialog4" class="pop-up4" src="https://media.discordapp.net/attachments/1030727815689150504/1035580935208435742/popup.png?width=1440&height=630" alt="">
+    
+    <!-- <div class="road_1_container">
+        <div class="register_page">
+        </div>
+    </div> -->
+    <!-- <div class="road_break_container">
+    </div> -->
+    <img  class="wong" src="img/7.png" alt="">
+    
+    <img  id="car1" class="car_r" src="https://cdn.discordapp.com/attachments/1030727815689150504/1035540422623232060/02.png">
+    <img  id="car2" class="car_g" src="https://cdn.discordapp.com/attachments/1030727815689150504/1035540423030099988/01.png">
+    <!-- <div class="anusauvare"></div> -->
+    <!-- <div class="road_2_container"></div> -->
+    <img  class="road_2_container" src="img/8.png" alt="">
+    <img  class="water_temple1" src="img/9.png" alt="">
+    <!-- <div class="water_temple1"></div> -->
+    <img  class="water_temple2" src="img/10.png" alt="">
+    <img  class="water_temple3" src="img/11.png" alt="">
+    <div class="start_door_container">
+        <div class="a1"><img  class="main_bridge" style="transform: scaleX(-1);"src="https://media.discordapp.net/attachments/1030727815689150504/1035545039205572608/9ba2c16101b1ba8e.png?width=1440&height=632"></div>
+        <div class="a1" ><img  id="br1" class="left_bridge" src="https://media.discordapp.net/attachments/1030727815689150504/1034855737005965443/02.png"></div>
+        <div class="a1"><img  id="br2" class="right_bridge" src="https://media.discordapp.net/attachments/1030727815689150504/1034855736154529843/01.png"></div>
+        <div class="a1"><img  class="main1_bridge" src="https://media.discordapp.net/attachments/1030727815689150504/1035545039205572608/9ba2c16101b1ba8e.png?width=1440&height=632"></div>
+        <!-- <img  class="main_bridge" src="https://media.discordapp.net/attachments/1030727815689150504/1034855736536207410/d80f4b17528d8e46.png?width=1440&height=248"> -->
+    </div>
+    <img  class="road_2_container" src="img/12.png" alt="">
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script type="text/javascript">
+		let vue = new Vue({
+			el: '#app',
+            data: {
+                intro: 'รถเมล์สาย 8 ได้รับการอนุมัติให้เดินรถครังแรกเมื่่อวันที่ 1 ตุลาคม พ.ศ. 2475 เป็นรถเมล์สัมปทานของบริษัทนายเลิศที่ในสมัยนั้นเรียกกันว่า "รถเมล์ขาว"'}
+
+		})
+	</script>
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+
+  </body>
+</html>
